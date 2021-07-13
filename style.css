@@ -1022,9 +1022,6 @@ body.show-menu .side-menu {
     justify-content: flex-start;
     height: auto;
   }
-  /* .main-information br {
-    display: none;
-  } */
 }
 
 @media screen and (max-width: 600px) {
