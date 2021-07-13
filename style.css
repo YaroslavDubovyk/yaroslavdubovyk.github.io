@@ -957,7 +957,7 @@ body.show-menu .side-menu {
   }
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 768px) {
   .header {
     flex-direction: row;
   }
@@ -977,6 +977,19 @@ body.show-menu .side-menu {
   }
   .how-we-work-menu {
     padding: 25px 25px 15px;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  .first-section {
+    padding-top: 70px;
+    flex-direction: column-reverse;
+  }
+  .col {
+    width: 100%;
+  }
+  .col-left {
+    height: 400px;
   }
 }
 
