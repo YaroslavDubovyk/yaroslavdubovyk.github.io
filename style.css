@@ -957,7 +957,7 @@ body.show-menu .side-menu {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   .header {
     flex-direction: row;
   }
@@ -988,6 +988,7 @@ body.show-menu .side-menu {
   }
   .how-we-work-menu-btn {
     width: 50%;
+    font-size: 20px;
   }
   .features-item-wrap {
     width: 100%;
@@ -1021,11 +1022,5 @@ body.show-menu .side-menu {
   .first-section {
     justify-content: flex-start;
     height: auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .how-we-work-menu-btn {
-    font-size: 20px;
   }
 }
