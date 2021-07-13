@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script> -->
+  <title>Test</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="side-menu">
+      <a href="#" class="side-menu-item">Menu 1</a>
+      <a href="#" class="side-menu-item">Menu 2</a>
+      <a href="#" class="side-menu-item">Menu 3</a>
+      <a href="#" class="side-menu-item">Menu 4</a>
+    </div>
+
+
+    <!-- <div class="ball-wrap" data-circle="js-circle">
+      <div class="ball-area"> </div>
+      <div class="ball js-circle">ball</div>
+
+    </div> -->
+    <div class="ball-wrap spin" data-circle="js-circle-1">
+
+      <div class="ball-empty"></div>
+
+      <button class="ball js-circle-1">Заказать уборку
+        <span class="hover-border"></span>
+      </button>
+
+    </div>
+    <header class="header">
+
+      <div class="header-logo-wpap">
+        <a href="/" class="header-logo">
+          <img src="./img/Logo.svg" width="100" height="25" alt="logo">
+        </a>
+        <div class="header-toggle">
+          <label class="toogle-wrap">
+            <input class="toggle-checkbox" type="checkbox">
+            <span data-text-left="Дом" data-text-right="Офис" class="toggle-text"></span>
+            <span class="toggle-active"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="header-menu">
+        <a href="#" class="header-menu-item">После ремонта</a>
+        <a href="#" class="header-menu-item">Генеральная уборка</a>
+        <a href="#" class="header-menu-item">Регулярная уборка</a>
+        <a href="#" class="header-menu-item">Мойка окон</a>
+      </div>
+
+      <div class="header-info">
+        <a href="tel:+380674016977" class="header-phone header-menu-item">+380 67 401 69 77</a>
+
+        <span class="header-time">24/7</span>
+        <button id="toggle-menu" type="button" class="header-menu-btn"></button>
+      </div>
+
+    </header>
+
+    <section class="first-section">
+      <div class="col col-left"></div>
+      <div class="col col-right">
+        <div class="main-information">
+          <h1 class="main-title">Уборка квартир
+            в Киеве </h1>
+          <p class="main-description">Мы уберем у вас дома или в офисе. <br />Наведем чистоту после ремонта и
+            <br /> проведем
+            генеральную уборку.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="trigger1" class="second-section">
+      <div class="features">
+
+        <div class="features-item-wrap features-item-wrap-1">
+          <div class="features-item-inner">
+            <div class="features-item-info">Тщательно <br /> отобранный <br />персонал</div>
+            <div class="features-item-hover-block">Не нужно тратить время, силы и ресурсы на разме- щение вакансий,
+              проведе- ние собеседований, про- верку кандидатов на должность уборщицы. За счет больших объемов мы можем
+              сделать это эффективнее.</div>
+          </div>
+        </div>
+
+
+        <div class="features-item-wrap features-item-wrap-2">
+          <div class="features-item-inner">
+            <div class="features-item-info">Качественная <br />эко-химия</div>
+            <div class="features-item-hover-block">Не нужно тратить время, силы и ресурсы на разме- щение вакансий,
+              проведе- ние собеседований, про- верку кандидатов на должность уборщицы. За счет больших объемов мы можем
+              сделать это эффективнее.</div>
+          </div>
+        </div>
+
+        <div class="features-item-wrap features-item-wrap-3">
+          <div class="features-item-inner">
+            <div class="features-item-info">Контролируем <br /> качество</div>
+            <div class="features-item-hover-block">Не нужно тратить время, силы и ресурсы на разме- щение вакансий,
+              проведе-
+              ние собеседований, про- верку кандидатов на должность уборщицы. За счет больших объемов мы можем сделать
+              это
+              эффективнее.</div>
+          </div>
+        </div>
+
+        <div class="features-item-wrap features-item-wrap-4">
+          <div class="features-item-inner">
+            <div class="features-item-info">Работаем <br /> круглосуточно</div>
+            <div class="features-item-hover-block">Не нужно тратить время, силы и ресурсы на разме- щение вакансий,
+              проведе- ние собеседований, про- верку кандидатов на должность уборщицы. За счет больших объемов мы можем
+              сделать это эффективнее.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="third-section">
+      <div id="hide" class="how-we-work">
+        <div class="how-we-work-header">
+          <h2 class="how-we-work-title">Как мы убираем</h2>
+          <p class="how-we-work-description">Клинер приезжает в назначенное время со всем необходимым и сразу
+            приступает к делу. Вам остаётся только оценить результат.</p>
+        </div>
+
+        <div class="how-we-work-inner active-slide-1">
+          <div class="how-we-work-menu">
+            <div class="how-we-work-menu-title">Как мы убираем</div>
+            <div class="how-we-work-menu-items">
+              <button data-order-btn="1" class="how-we-work-menu-btn"><span class="button-icon">→</span> Кухня</button>
+              <button data-order-btn="2" class="how-we-work-menu-btn"><span class="button-icon">→</span>Комнаты</button>
+              <button data-order-btn="3" class="how-we-work-menu-btn"><span class="button-icon">→</span>Ванная</button>
+              <button data-order-btn="4" class="how-we-work-menu-btn"><span
+                  class="button-icon">→</span>Прихожая</button>
+            </div>
+            <div class="how-we-work-menu-title"></div>
+          </div>
+          <div class="how-we-work-img-wrap">
+            <div class="fake-bg fake-slide-1"></div>
+            <div class="how-we-work-img how-we-work-img-1 active">
+              <img src="./img/how-we-work-img-1.jpg" />
+              <div class="info-tooltip info-tooltip-1">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-2">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-3">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-4">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-5">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-6">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-7">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+            </div>
+            <div class="how-we-work-img  how-we-work-img-2">
+              <img src="./img/how-we-work-img-2.jpg" />
+              <div class="info-tooltip info-tooltip-1">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-2">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-3">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-4">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-5">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+            </div>
+            <div class="how-we-work-img  how-we-work-img-3">
+              <img src="./img/how-we-work-img-3.jpg" />
+              <div class="info-tooltip info-tooltip-1">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-2">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-3">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-4">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-5">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+
+
+            </div>
+            <div class="how-we-work-img  how-we-work-img-4">
+              <img src="./img/how-we-work-img-4.jpg" />
+              <div class="info-tooltip info-tooltip-1">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-2">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-3">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-4">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-5">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-6">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+              <div class="info-tooltip info-tooltip-7">
+                <div class="info-tooltip-btn">+</div>
+                <div class="info-tooltip-text">Lorem ipsum</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </section>
+  </div>
+  <div id="hide"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
+    integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+  <script src="./main.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
