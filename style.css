@@ -980,16 +980,22 @@ body.show-menu .side-menu {
   }
 }
 
-@media (max-width: 812px) and (orientation: landscape) {
+@media and (max-width: 600px) and (orientation: landscape) {
   .first-section {
     padding-top: 70px;
     flex-direction: column-reverse;
+    height: auto;
   }
   .col {
     width: 100%;
   }
   .col-left {
     height: 400px;
+  }
+  .main-information {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    max-width: 100%;
   }
 }
 
